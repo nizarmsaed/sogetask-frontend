@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>📋 Liste des Missions - SogeTask</h2>
+
+  <table class="mission-table">
+    <thead>
+      <tr>
+        <th>Titre</th>
+        <th>Client</th>
+        <th>Statut</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let m of missions">
+        <td>{{ m.titre }}</td>
+        <td>{{ m.client }}</td>
+        <td>
+          <span class="badge">{{ m.statut }}</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="missions.length === 0">
+    <p>Aucune mission trouvée. Vérifiez que le Backend est lancé !</p>
+  </div>
+</div>

@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+h1 { color: #005682; } /* Le bleu Sogeti-style */
+
+table {
+  background: white;
+  border-collapse: collapse;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th { background-color: #005682; color: white; }
